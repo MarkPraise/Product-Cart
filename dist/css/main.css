@@ -100,4 +100,28 @@ h2, h3 {
   bottom: -20px;
   right: 58px;
   background-color: hsl(20, 50%, 98%);
+}
+
+.aside {
+  padding-block-end: 15px;
+}
+.aside .container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aside-img {
+  align-self: center;
+}
+.aside-p {
+  color: hsl(7, 20%, 60%);
+  font-weight: 500;
+  text-align: center;
+}
+.aside-h2 {
+  color: hsl(14, 86%, 42%);
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

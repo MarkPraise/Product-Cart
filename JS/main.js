@@ -32,6 +32,11 @@ document.addEventListener("readystatechange",(e)=>{
                     menu.innerHTML = fillMenu;
                 })
         })()
+
+        let totalQty = 0;
+
+        const qty = document.querySelector(".qty");
+        qty.textContent = 0 ;
     }
 })
 
