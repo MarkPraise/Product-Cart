@@ -1,4 +1,4 @@
-
+// This generates the content
 document.addEventListener("readystatechange",(e)=>{
     if(document.readyState ==="complete"){
         const menu =document.querySelector(".menu");

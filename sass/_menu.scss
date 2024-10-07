@@ -4,6 +4,35 @@
 
     
     .menu{
+        @include mp("tablet"){
+            max-width: 720px;
+        
+            display: flex;
+            flex-flow: row wrap;
+            gap: 15px;
+            
+            min-height: 80vh;
+
+            .menu-item{
+                flex-basis: 46%; 
+            }
+
+            .add{
+                padding: 4px 10px;
+                right: 24px;
+                bottom: -15px;
+            }
+        }
+
+        @include mp(desktop-sm){
+            .menu-item{
+                flex-basis: 30%;
+            }
+
+            .add{
+                right:38px;
+            }
+        }
         
         &-item{
             margin-block: 20px;
@@ -37,24 +66,30 @@
             font-weight: weight(bold);
         }
     }
+
     @include mp("mobile"){
         max-width: 300px;
     }
     @include mp("mobile-md"){
         max-width: 350px;
+
+        .add{
+            right: 80px;
+        }
     }
     @include mp("tablet-sm"){
         max-width: 450px;
     }
-    @include mp("tablet"){
-        max-width: 680px;
-    }
+
+    
     @include mp("desktop-sm"){
-        max-width:960px ;
+        max-width:990px ;
     }
+
     @include mp("desktop-md"){
         max-width: 1150px;
     }
+
     @include mp("desktop-lg"){
         max-width: 1300px;
     }
@@ -77,3 +112,8 @@
     background-color: color("50");
 }
 
+
+
+main .container{
+    margin: 20px auto;
+}
