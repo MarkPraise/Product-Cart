@@ -125,6 +125,7 @@ h2, h3 {
 .add {
   display: flex;
   justify-content: center;
+  align-items: center;
   border: 1px solid hsl(14, 25%, 72%);
   padding: 8px 20px;
   gap: 8px;
@@ -192,14 +193,18 @@ main .container {
 }
 @media (min-width: 700px) {
   .aside .container {
-    margin: 20px;
+    margin-block: 20px;
     position: sticky;
     right: 30px;
     top: 20px;
+    padding-block: 20px;
   }
 }
 .aside-img {
   align-self: center;
+}
+.aside-img img {
+  width: 100%;
 }
 .aside-p {
   color: hsl(7, 20%, 60%);
@@ -209,4 +214,66 @@ main .container {
 .aside-h2 {
   color: hsl(14, 86%, 42%);
   font-weight: 700;
+}
+.aside footer header {
+  display: flex;
+  justify-content: space-between;
+}
+.aside footer .totalOrder {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.aside footer .footer-p {
+  display: flex;
+  margin-block: 24px;
+  padding: 0.8rem;
+  gap: 6px;
+  border-radius: 10px;
+  background-color: hsl(13, 31%, 94%);
+}
+.aside footer img {
+  width: 6%;
+}
+.aside footer .carbon {
+  font-weight: 600;
+}
+.aside footer .confirmButton {
+  width: 100%;
+  padding: 0.8rem;
+  font: inherit;
+  border-radius: 24px;
+  border: none;
+  background-color: hsl(14, 86%, 42%);
+  color: #fff;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 10px;
+  border-bottom: 2px solid hsl(20, 50%, 98%);
+  font-size: 0.8rem;
+}
+.item-detail h2 {
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+  padding-block-end: 8px;
+}
+.item-detail .item-price {
+  margin-inline: 6px;
+  color: hsl(7, 20%, 60%);
+}
+.item-detail .item-qty {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+}
+.item-detail .item-total {
+  color: hsl(12, 20%, 44%);
+  font-weight: 700;
+}
+.item .cancelButton {
+  border: 2px solid hsl(14, 25%, 72%);
+  padding: 2px;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

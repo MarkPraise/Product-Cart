@@ -29,11 +29,14 @@
   </main>
   <aside class="aside">
     <div class="container">
-      <h2 class="aside-h2">Your Cart(<span class="qty"></span>)</h2>
+      <h2 class="aside-h2">Your Cart(<span class="qty" data-totalQty >0</span>)</h2>
       <div class="aside-img">
         <img src="../dist/images/illustration-empty-cart.svg" alt="">
       </div>
-      <p class="aside-p">Your added Items will appear here</p>
+      <div data-cartItems></div>
+      <footer>
+        <p class="aside-p">Your added Items will appear here</p>
+      </footer>
     </div>
   </aside>
 
